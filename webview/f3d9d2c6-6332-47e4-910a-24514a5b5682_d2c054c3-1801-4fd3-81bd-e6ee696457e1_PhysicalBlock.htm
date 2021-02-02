@@ -1,0 +1,51 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Earth Observation System Context</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1_BDD.htm'>BDD</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1_PhysicalBlock.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='608,320,728,390' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_ffc698c3-f4ce-43c0-a744-8d25ddfceed5.htm'>
+<area shape='rect' coords='302,320,422,390' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5.htm'>
+<area shape='rect' coords='614,510,734,580' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_9e50580a-bc24-4d52-8a25-59982a498b04.htm'>
+<area shape='rect' coords='608,88,728,158' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_7df9593d-9895-4fcc-9789-d1b33ecc47e9.htm'>
+<area shape='rect' coords='850,320,970,390' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_2f0d877e-f597-4b75-a17f-b649573ef870.htm'>
+<area shape='rect' coords='41,320,161,390' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_d6866885-c2a1-4949-8379-d6c20a9d3de4.htm'>
+<area shape='rect' coords='644,418,660,463' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_fd7716a4-e09f-412d-9f99-680c279d8705.htm'>
+<area shape='rect' coords='660,175,676,283' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_a155b176-1040-4bf4-aa6b-e4e0dafd09fd.htm'>
+<area shape='rect' coords='747,348,811,363' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_c2f45277-81ca-4870-89cd-300f0c947a55.htm'>
+<area shape='rect' coords='444,364,567,379' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_2323fcfa-0748-4e80-8503-d1350a89a25c.htm'>
+<area shape='rect' coords='463,332,548,347' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_17ef2868-3b4c-401e-a8b7-d2ea75bf277b.htm'>
+<area shape='rect' coords='180,328,263,344' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_0627bf03-d93f-4638-9459-3f2ea7e33be4.htm'>
+</map>
+</div>
+</body></html>

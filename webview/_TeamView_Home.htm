@@ -1,0 +1,101 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='FolderBrowser.js'></script>
+<script type='text/javascript' src='EntityBrowser.js'></script>
+<script type='text/javascript'>
+
+window.addEventListener('message', ReceiveIFrameMessage, false);
+
+function ReceiveIFrameMessage(event){
+SizeIFrame(event.data);
+}
+
+function SizeIFrame(pageHeight_Pixels){
+pageHeight_Pixels += 32;
+document.getElementById('iframeMain').style.height = pageHeight_Pixels + 'px';
+}
+</script>
+</head>
+<body>
+<!--Header -->
+<table cellpadding='0' cellspacing='0' style='width: 100%; padding-bottom: 10px'>
+<tr>
+<td>
+<img src='GENESYS_teamview.png' style='width: 300px'/>
+</td>
+<td style='text-align: right; vertical-align: bottom'>
+<div id='divProjectName'>
+Project: Earth Observation
+</div>
+<div>
+Contact: Tim Sherburne<br />
+<a href='http://www.vitechcorp.com' target='_blank'>Powered By GENESYS</a>.
+Generated 2 
+February 
+2021.
+</div>
+</td>
+</tr>
+</table>
+<!-- Divider -->
+<div id='divHeaderDivider' />
+
+<!-- Main body -->
+<table cellpadding='0' cellspacing='0' style='width: 100%; padding-top: 10px'><tr><td style='width: 350px; vertical-align: top'>
+<!-- Folder / Package tree -->
+<table cellpadding='0' cellspacing='0' style='width: 100%; padding-top: 15px'>
+<tr><td id='tdFolderPackageTreeHeader'>
+<span id='spnViewFolders' onclick="ViewTree_Click('folder')">Folders</span>&nbsp;&nbsp;<span id='spnViewDivider'>|</span>&nbsp;&nbsp;<span id='spnViewPackages' onclick="ViewTree_Click('package')">Packages</span>
+</td></tr>
+<tr><td id='tdFolderPackageTree'>
+<table cellpadding='0' cellspacing='0' style='width: 100%; height: 400px'><tr>
+<!-- Folders / Packages -->
+<td id='tdFolderPackageTreeBorder' style='width: 50%; vertical-align: top'>
+<div id='divFolderTree'>
+<div class='cL1'>
+<span class='cNde'>
+<img src='F_E.png' align='bottom' onclick='T_C(this)'/>
+<span class='cNdeLink' onclick="FP_C(this, '0f7e7123-0188-4249-af06-17bd15839ea6')">Component</span>
+</span>
+</div>
+<div class='cL1'>
+<span class='cNde'>
+<img src='F_E.png' align='bottom' onclick='T_C(this)'/>
+<span class='cNdeLink' onclick="FP_C(this, '18f36831-03b8-4d14-89cc-00a981def236')">Link</span>
+</span>
+</div>
+<div class='cL1'>
+<span class='cNde'>
+<img src='F_E.png' align='bottom' onclick='T_C(this)'/>
+<span class='cNdeLink' onclick="FP_C(this, 'ab70da3b-1963-41e0-817e-f663e54f6681')">Organization</span>
+</span>
+</div>
+<div class='cL1'>
+<span class='cNde'>
+<img src='F_E.png' align='bottom' onclick='T_C(this)'/>
+<span class='cNdeLink' onclick="FP_C(this, 'f5a2162d-74d3-47a0-9b8b-e51d12db78a0')">Requirement</span>
+</span>
+</div>
+<div class='cL1'>
+<span class='cNde'>
+<img src='F_E.png' align='bottom' onclick='T_C(this)'/>
+<span class='cNdeLink' onclick="FP_C(this, 'fcbe73fa-9d51-4d60-af41-6e728a715264')">UseCase</span>
+</span>
+</div>
+</div>
+<div id='divPackageTree' style='display: none'>
+</div>
+
+</td>
+<!-- Entities browser -->
+<td id='tdEntitiesBorder' style='width: 50%; vertical-align: top'></td>
+</tr></table>
+</td></tr></table>
+</td>
+<!-- Main Content -->
+<td style='text-align: center; vertical-align: top'>
+<iframe id='iframeMain' src='_MainHome.htm' style='width: 100%; height: 100%; background: white' frameborder='0' scrolling='auto'></iframe>
+</td></tr></table></body></html>
