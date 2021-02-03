@@ -1,5 +1,5 @@
 # CubeSat
-Case study for Spare MBSE Information Model
+Case study for Sparse MBSE Information Model
 
 # WebView Model
 https://coordinated-systems-lab.github.io/cube-sat/
