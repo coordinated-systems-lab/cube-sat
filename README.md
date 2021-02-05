@@ -1,7 +1,7 @@
 # CubeSat
 Case study for Sparse MBSE Information Model
 
-<img src="images/Alen-Space-CubeSats-sketch-400x573.png" width="200">
+<img src="images/Alen-Space-CubeSats-sketch-400x573.png" width="300">
 
 # WebView Model
 https://coordinated-systems-lab.github.io/cube-sat/
