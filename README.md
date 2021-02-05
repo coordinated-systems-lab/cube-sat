@@ -1,10 +1,14 @@
 # CubeSat
 Case study for Sparse MBSE Information Model
 
+<img src="images/Alen-Space-CubeSats-sketch-400x573.png" width="200">
+
 # WebView Model
 https://coordinated-systems-lab.github.io/cube-sat/
 
 # [GraphQL](https://graphql.org/) Model Exchange
+
+<img src="images/graphql.png" width="200">
 
 * [Sparse MBSE GraphQL Schema](./graphql/mbse-metamodel.graphql)
 * [CubeSat Case Study System Model](./graphql/earth-observation.json)
