@@ -3,6 +3,10 @@ Case study for Sparse MBSE Information Model
 
 <img src="images/Alen-Space-CubeSats-sketch-400x573.png" width="300">
 
+# Small Satellite Applications
+
+https://info.alen.space/small-satellite-applications-businesses-in-space-to-start-now
+
 # WebView Model
 https://coordinated-systems-lab.github.io/cube-sat/
 
