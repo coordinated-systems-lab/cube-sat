@@ -7,6 +7,8 @@ Case study for Sparse MBSE Information Model
 
 https://info.alen.space/small-satellite-applications-businesses-in-space-to-start-now
 
+* [Case Study](./common/lume-1-cubesat-case-study-updated.pdf)
+
 # WebView Model
 https://coordinated-systems-lab.github.io/cube-sat/
 
