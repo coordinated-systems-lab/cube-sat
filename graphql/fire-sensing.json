@@ -3,15 +3,15 @@
     "cpsSystemModel": {
       "project": {
         "id": "f3d9d2c6-6332-47e4-910a-24514a5b5682",
-        "name": "Earth-Observation",
-        "description": "CubeSat-based satellite system for earth observation.",
+        "name": "Fire-Sensing",
+        "description": "CubeSat-based satellite system for fire sensing",
         "version": "v.0.0.0"
       },
       "component": [
         {
           "identity": {
             "id": "d2c054c3-1801-4fd3-81bd-e6ee696457e1",
-            "name": "Earth Observation System Context",
+            "name": "Forest Fire Sensing System Context",
             "number": "C"
           },
           "attributes": {
@@ -22,7 +22,7 @@
             "puid": null,
             "purpose": null,
             "receptions": [],
-            "abbreviation": "EOS",
+            "abbreviation": "FFSS",
             "title": null,
             "description": "The system context identifies the physical context (the environment and external systems your system interacts with) enabling you to specify the system boundary."
           },
@@ -137,7 +137,7 @@
               {
                 "linkTarget": {
                   "id": "c2f45277-81ca-4870-89cd-300f0c947a55",
-                  "name": "Observation",
+                  "name": "Sensor Report",
                   "number": ""
                 },
                 "portID": null
@@ -254,60 +254,6 @@
         },
         {
           "identity": {
-            "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
-            "name": "Earth",
-            "number": "E"
-          },
-          "attributes": {
-            "type": "Environment",
-            "clin": null,
-            "mission": null,
-            "operations": [],
-            "puid": null,
-            "purpose": null,
-            "receptions": [],
-            "abbreviation": "E",
-            "title": null,
-            "description": null
-          },
-          "parameters": [],
-          "relations": {
-            "assignedTo": [],
-            "builtFrom": [],
-            "builtIn": [],
-            "causes": [],
-            "connectedTo": [
-              {
-                "componentTarget": {
-                  "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
-                  "name": "Earth",
-                  "number": "E"
-                },
-                "portID": null
-              }
-            ],
-            "describedBy": [],
-            "documentedBy": [],
-            "generalizationOf": [],
-            "impactedBy": [],
-            "kindOf": [],
-            "participatesIn": [
-              {
-                "componentTarget": {
-                  "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
-                  "name": "Earth",
-                  "number": "E"
-                }
-              }
-            ],
-            "performs": [],
-            "reportedBy": [],
-            "specifiedBy": [],
-            "verifiedBy": []
-          }
-        },
-        {
-          "identity": {
             "id": "9e50580a-bc24-4d52-8a25-59982a498b04",
             "name": "GPS",
             "number": "G"
@@ -358,6 +304,60 @@
                   "id": "9e50580a-bc24-4d52-8a25-59982a498b04",
                   "name": "GPS",
                   "number": "G"
+                }
+              }
+            ],
+            "performs": [],
+            "reportedBy": [],
+            "specifiedBy": [],
+            "verifiedBy": []
+          }
+        },
+        {
+          "identity": {
+            "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
+            "name": "Ground Sensor",
+            "number": "GS"
+          },
+          "attributes": {
+            "type": "External_System",
+            "clin": null,
+            "mission": null,
+            "operations": [],
+            "puid": null,
+            "purpose": null,
+            "receptions": [],
+            "abbreviation": "E",
+            "title": null,
+            "description": null
+          },
+          "parameters": [],
+          "relations": {
+            "assignedTo": [],
+            "builtFrom": [],
+            "builtIn": [],
+            "causes": [],
+            "connectedTo": [
+              {
+                "componentTarget": {
+                  "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
+                  "name": "Ground Sensor",
+                  "number": "GS"
+                },
+                "portID": null
+              }
+            ],
+            "describedBy": [],
+            "documentedBy": [],
+            "generalizationOf": [],
+            "impactedBy": [],
+            "kindOf": [],
+            "participatesIn": [
+              {
+                "componentTarget": {
+                  "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
+                  "name": "Ground Sensor",
+                  "number": "GS"
                 }
               }
             ],
@@ -490,7 +490,44 @@
           }
         }
       ],
-      "document": [],
+      "document": [
+        {
+          "identity": {
+            "id": "bd282495-b80a-4625-9ccc-174b4decf85e",
+            "name": "CONOPS",
+            "number": "DOC.1"
+          },
+          "attributes": {
+            "documentDate": "Thursday, December 27, 2018",
+            "nonGovernmentCategory": "OTHER_PUBLICATIONS",
+            "clin": null,
+            "externalFilePath": null,
+            "documentNumber": null,
+            "title": null,
+            "identification": null,
+            "governmentCategory": "nil",
+            "revisionNumber": "v1.0",
+            "cdrlNumber": null,
+            "documentOverview": "The European FireRS project aims the early detection of fires, as::well as their monitoring and continuous follow-up in order to provide::real data to emergency systems. It brings together three elements::that make up the system:::• Ground sensors.::• A satellite that collects data from sensors.::• Software for predicting the progress of the fire.",
+            "documentScript": "nil",
+            "type": "Procurement_Specification",
+            "scope": null,
+            "description": "wildFIRE Remote Sensing (FIRE-RS) Concept of Operations::::https://github.com/coordinated-systems-lab/cube-sat/blob/main/common/lume-1-cubesat-case-study-updated.pdf "
+          },
+          "parameters": [],
+          "relations": {
+            "impactedBy": [],
+            "referencedBy": [],
+            "references": [],
+            "refinedBy": [],
+            "refines": [],
+            "reportsOn": [],
+            "signedBy": [],
+            "tracedFrom": [],
+            "tracesTo": []
+          }
+        }
+      ],
       "function": [],
       "item": [],
       "link": [
@@ -747,7 +784,7 @@
         {
           "identity": {
             "id": "c2f45277-81ca-4870-89cd-300f0c947a55",
-            "name": "Observation",
+            "name": "Sensor Report",
             "number": ""
           },
           "attributes": {
@@ -769,15 +806,15 @@
               {
                 "componentTarget": {
                   "id": "2f0d877e-f597-4b75-a17f-b649573ef870",
-                  "name": "Earth",
-                  "number": "E"
+                  "name": "Ground Sensor",
+                  "number": "GS"
                 },
                 "portID": null
               },
               {
                 "linkTarget": {
                   "id": "c2f45277-81ca-4870-89cd-300f0c947a55",
-                  "name": "Observation",
+                  "name": "Sensor Report",
                   "number": ""
                 },
                 "portID": null
@@ -894,7 +931,7 @@
         {
           "identity": {
             "id": "8713c517-fe38-4fd9-9988-141c4862c0d2",
-            "name": "The earth observation system shall monitor United States weather patterns.",
+            "name": "The fire sensing system shall monitor a geographic area to detect forest fires.",
             "number": "REQ.1"
           },
           "attributes": {
@@ -918,7 +955,15 @@
             "basisOf": [],
             "causes": [],
             "documentedBy": [],
-            "elicitedBy": [],
+            "elicitedBy": [
+              {
+                "requirementTarget": {
+                  "id": "8713c517-fe38-4fd9-9988-141c4862c0d2",
+                  "name": "The fire sensing system shall monitor a geographic area to detect forest fires.",
+                  "number": "REQ.1"
+                }
+              }
+            ],
             "impactedBy": [],
             "refinedBy": [],
             "refines": [],
@@ -932,7 +977,7 @@
         {
           "identity": {
             "id": "8b55ba06-c7dd-40b2-bf8c-daf10cfdd352",
-            "name": "Earth Observation",
+            "name": "Forest Fire Sensing",
             "number": "UC"
           },
           "attributes": {
@@ -947,8 +992,24 @@
           "relations": {
             "basedOn": [],
             "causes": [],
-            "documentedBy": [],
-            "elicits": [],
+            "documentedBy": [
+              {
+                "documentTarget": {
+                  "id": "bd282495-b80a-4625-9ccc-174b4decf85e",
+                  "name": "CONOPS",
+                  "number": "DOC.1"
+                }
+              }
+            ],
+            "elicits": [
+              {
+                "requirementTarget": {
+                  "id": "8713c517-fe38-4fd9-9988-141c4862c0d2",
+                  "name": "The fire sensing system shall monitor a geographic area to detect forest fires.",
+                  "number": "REQ.1"
+                }
+              }
+            ],
             "extendedBy": [],
             "extends": [],
             "generalizationOf": [],
@@ -958,7 +1019,7 @@
               {
                 "useCaseTarget": {
                   "id": "0d0d7999-fb7b-4b6c-8ec9-789812a96cea",
-                  "name": "Collect Mission Payload",
+                  "name": "Collect Fire Sensing Reports",
                   "number": "UC.3"
                 }
               },
@@ -1057,7 +1118,7 @@
         {
           "identity": {
             "id": "0d0d7999-fb7b-4b6c-8ec9-789812a96cea",
-            "name": "Collect Mission Payload",
+            "name": "Collect Fire Sensing Reports",
             "number": "UC.3"
           },
           "attributes": {
@@ -1082,7 +1143,7 @@
               {
                 "useCaseTarget": {
                   "id": "0d0d7999-fb7b-4b6c-8ec9-789812a96cea",
-                  "name": "Collect Mission Payload",
+                  "name": "Collect Fire Sensing Reports",
                   "number": "UC.3"
                 }
               }
