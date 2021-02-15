@@ -17,7 +17,7 @@ https://coordinated-systems-lab.github.io/cube-sat/
 <img src="images/graphql.png" width="200">
 
 * [Sparse MBSE GraphQL Schema](./graphql/mbse-metamodel.graphql)
-* [CubeSat Case Study System Model](./graphql/earth-observation.json)
+* [CubeSat Case Study System Model](./graphql/fire-sensing.json)
 
 # GraphQL Playground
 https://sim-graphql.vercel.app/
