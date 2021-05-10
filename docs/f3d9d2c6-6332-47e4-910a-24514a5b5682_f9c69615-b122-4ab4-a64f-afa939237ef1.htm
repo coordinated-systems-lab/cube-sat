@@ -1,0 +1,75 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Mission Control Center (MCC) / COMMAND AND CONTROL</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>COMMAND AND CONTROL</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>MCC.9</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Key Performance Parameter</td>
+<td>False</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Performance Parameter Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Origin</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Incentive Performance Parameter</td>
+<td>False</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>refined by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_da25ddf7-0bb4-41b5-b8c4-afcf3bccb084.htm')">Requirement: MCC.9.1 Satellite Correction Mechanism</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_53a69790-d70b-46e3-b65a-1aff7ce87a6d.htm')">Requirement: MCC.9.2 Payload Reconfiguration</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_99e2610e-e65c-4726-887e-328462906a74.htm')">Requirement: MCC.9.3 Maneuver Planning</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_de34abb8-b798-48ef-8673-03b49c0ff746.htm')">Requirement: MCC.9.4 MCC Database Information</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_1965e92b-39f1-454c-a59e-22935143d097.htm')">Requirement: MCC.9.5 Mission Schedule Execution</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_677e6bfa-1b8e-4dff-8c13-92390bf4d947.htm')">Requirement: MCC.9.6 Satellite and Payload SOH</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_497b0678-dad4-4f24-94cf-719fc66201ad.htm')">Requirement: MCC.9.7 Terminal Interaction</span></div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>refines</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7fa94dc6-783b-4ec0-bd19-4bfa98d575db.htm')">Requirement: MCC MISSION CONTROL CENTER (MCC) REQUIREMENTS</span></div>
+</td></tr>
+</table>
+</body></html>

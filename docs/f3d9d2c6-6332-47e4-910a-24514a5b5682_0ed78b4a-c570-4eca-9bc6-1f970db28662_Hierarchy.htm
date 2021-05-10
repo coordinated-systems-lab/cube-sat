@@ -1,0 +1,45 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Telemeter</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_BDD.htm'>BDD</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_Hierarchy.htm'>Hierarchy</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_Hierarchy.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='266,88,366,158' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662.htm'>
+<area shape='rect' coords='41,208,141,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_55df5d66-04aa-4756-ae4c-3132ad1dfb3b.htm'>
+<area shape='rect' coords='191,208,291,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_36387219-7310-4815-a7ea-de9a2c32ebed.htm'>
+<area shape='rect' coords='341,208,441,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_e7a2e2b5-07ff-4bbe-9b83-d96efd4d5cd3.htm'>
+<area shape='rect' coords='491,208,591,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_30882452-3f2b-4d5b-9fe2-384f8c97dab0.htm'>
+</map>
+</div>
+</body></html>

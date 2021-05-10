@@ -1,0 +1,89 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Remote Terminals</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_c36c4ec6-0a7e-4eb7-ab5c-61722860ff49.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_c36c4ec6-0a7e-4eb7-ab5c-61722860ff49_BDD.htm'>BDD</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_c36c4ec6-0a7e-4eb7-ab5c-61722860ff49_Hierarchy.htm'>Hierarchy</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_c36c4ec6-0a7e-4eb7-ab5c-61722860ff49_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Remote Terminals</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>C.2.3</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Description</td>
+<td><style type="text/css">
+			.cs2654AE3A{text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt}
+			.cs63D6557C{color:#000000;background-color:transparent;font-family:'Segoe UI';font-size:9pt;font-weight:normal;font-style:normal;}
+		</style>
+		<p class="cs2654AE3A"><span class="cs63D6557C">Remote terminals are interfaces on ground networks, separate from the mission control center, which may be accessed by payload controllers, telemetry analysts, instrument and science teams, and support personnel, such as system administrators and software development teams. They may be receive-only, or they may transmit data to the ground network.</span></p></td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>Subsystem</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built from</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_cd33d6a6-c731-41b6-bb6b-2ead39a68d08.htm')">Component: C.2.3.1 Receiving Antennas</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_63ed9cf3-5787-41b4-864b-2ed8ff436236.htm')">Component: C.2.3.2 Transmitting Antennas</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_87a811ec-2d8a-4a0a-aca9-64fa5afe2dfa.htm')">Component: C.2.3.3 Receiver</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f2decdb7-a575-4986-ac57-5de86d09f423.htm')">Component: C.2.3.4 Transmitter</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_07c861f0-532a-40e3-8e3f-198eb6058c49.htm')">Component: C.2.3.5 Diplexer</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d5be0d08-8199-43ce-8740-a93021e526b9.htm')">Component: C.2.3.6 CPU</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built in</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5.htm')">Component: C.2 Ground Segment</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>specified by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f486dbca-3515-4ce9-921b-d0e17a4c0776.htm')">Requirement: GST.10 Performance Metrics</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ac7bdc60-90a6-4b18-b723-0fd040283e06.htm')">Requirement: GST.11 Performance Metric Formats</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_29671852-e2ea-4104-be85-f985dff9f075.htm')">Requirement: GST.29 Data Storage Period</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f3ac1482-41d8-4825-badd-ee194859704f.htm')">Requirement: GST.44 Maintain Data on Events and Failures</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_3a0e28c8-b829-4747-a51e-bdbba39a7669.htm')">Requirement: GST.51 Ephemeris Data Requirements</span></div>
+</td></tr>
+</table>
+</body></html>

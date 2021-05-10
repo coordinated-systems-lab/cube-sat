@@ -1,0 +1,45 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Ground Station Terminals (GST) / Antenna Requirements</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_8d0889b9-9757-4ad7-960b-54654176ac1d.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_8d0889b9-9757-4ad7-960b-54654176ac1d_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='f3d9d2c6-6332-47e4-910a-24514a5b5682_8d0889b9-9757-4ad7-960b-54654176ac1d_Hierarchy.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='341,88,441,158' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_8d0889b9-9757-4ad7-960b-54654176ac1d.htm'>
+<area shape='rect' coords='41,208,141,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_f998b541-e4f4-40da-8904-2601818c9966.htm'>
+<area shape='rect' coords='191,208,291,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_22d52936-8a16-46bb-9bea-48f0c82c3469.htm'>
+<area shape='rect' coords='341,208,441,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_9fe093a9-5f97-4273-bb6d-c72a4b7f64c4.htm'>
+<area shape='rect' coords='491,208,591,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_cd33d6a6-c731-41b6-bb6b-2ead39a68d08.htm'>
+<area shape='rect' coords='641,208,741,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_63ed9cf3-5787-41b4-864b-2ed8ff436236.htm'>
+<area shape='rect' coords='341,328,441,398' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_3124e944-8a44-4e52-9d97-2ea0c3532df8.htm'>
+</map>
+</div>
+</body></html>

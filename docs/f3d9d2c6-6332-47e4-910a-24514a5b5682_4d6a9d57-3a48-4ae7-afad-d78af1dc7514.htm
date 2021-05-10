@@ -1,0 +1,109 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Ground Station Terminals (GST) / Ground Station Terminal Requirements</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_4d6a9d57-3a48-4ae7-afad-d78af1dc7514.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_4d6a9d57-3a48-4ae7-afad-d78af1dc7514_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Ground Station Terminal Requirements</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>GST</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Key Performance Parameter</td>
+<td>False</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Performance Parameter Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Origin</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Incentive Performance Parameter</td>
+<td>False</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>packaged by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d207a4e2-ae9e-4849-a970-842a6e4c9dce.htm')">Package:  Reports</span></div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>refined by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_8d0889b9-9757-4ad7-960b-54654176ac1d.htm')">Requirement: GST.1 Antenna Requirements</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_a07e5157-1767-4160-a1bf-fa80a6f88db8.htm')">Requirement: GST.2 Diplexer</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_fbd8f18d-5975-4333-9e95-f47abe0860df.htm')">Requirement: GST.3 Transmitter</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_0743ead3-9e54-4307-946c-a0bdafbdbbf9.htm')">Requirement: GST.4 Receiver</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_6ed4137f-8ab2-42d0-bc7a-a76e7ff05698.htm')">Requirement: GST.5 Data Processing, Dissemination, and Storage</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f9b0398e-170e-4e81-ba55-8362a22ef3d6.htm')">Requirement: GST.6 TT&amp;C Requirements</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ade5f8d8-7966-481b-a90c-38b16e295414.htm')">Requirement: GST.7 GS Updates</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b4e74b8d-83b6-41e6-ab6b-17127c9d57ca.htm')">Requirement: GST.8 Software Management</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_55644b8b-2d9e-496c-b795-1ebe49e5ddb8.htm')">Requirement: GST.9 Scheduling Management</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f486dbca-3515-4ce9-921b-d0e17a4c0776.htm')">Requirement: GST.10 Performance Metrics</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ac7bdc60-90a6-4b18-b723-0fd040283e06.htm')">Requirement: GST.11 Performance Metric Formats</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_32057edc-231b-4e7c-ac9b-21a184e5569a.htm')">Requirement: GST.12 Network Management</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_cbc8f808-4add-4db9-b9a8-0c99b4b51726.htm')">Requirement: GST.13 GUI</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_4f0ffb67-ed70-4c50-baef-4f959ec9eef6.htm')">Requirement: GST.14 Parameter Display</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_94cbe073-21e2-48eb-8aaa-4d7a2d385a4d.htm')">Requirement: GST.15 Time Synchronization</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_9d630bb3-6d62-4153-84e6-cf9374480aa1.htm')">Requirement: GST.16 Time Format and Use</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_46e3ca12-2331-406c-8e23-506f8c5eea21.htm')">Requirement: GST.17 User Authentication</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_a6160c05-7a63-4a80-9d73-1efb2a3e4e99.htm')">Requirement: GST.18 User Rights</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f9b3ad91-96aa-472c-85dc-a2c3da0538c8.htm')">Requirement: GST.19 Operating System Platform</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d1d3c8e0-d8b1-42a9-80ee-9854c363148f.htm')">Requirement: GST.20 Ground Station Architecture Scalability</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7659c9da-81fd-4baf-a7eb-a0a1ab4855bc.htm')">Requirement: GST.21 Progressive Deployment</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7c33c297-2b32-4cfc-83fd-62738db831ad.htm')">Requirement: GST.27 Number of Operators</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_0ef840d7-468e-4823-8389-5724049e279d.htm')">Requirement: GST.28 Offline Capability</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_473f0a49-f238-4a9d-a913-5021440a2746.htm')">Requirement: GST.30 Centers</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_1fcdeeb1-9bcc-48ec-8629-6ce90066bd77.htm')">Requirement: GST.31 Reconfiguration of Satellite</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7ae1a15c-0089-4eee-8a8e-3e13d37c3ce6.htm')">Requirement: GST.32 GS Operation Period</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b672dd37-b843-40f6-89ac-8b78386f0e15.htm')">Requirement: GST.33 GST Updates</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ada23c1e-c89b-42b6-975a-1a055d4b18a1.htm')">Requirement: GST.34 Failure Fallback Mechanism</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ce480235-8ecc-4931-b47b-627f79063e80.htm')">Requirement: GST.35 GS Upgrade</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_76c15fb1-b70f-4573-92c2-506982f170ce.htm')">Requirement: GST.41 GS Availability</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b4b9fe60-d4f0-4463-885f-5b07335a1ff3.htm')">Requirement: GST.42 MTBF Time</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ebdbc190-095b-494a-9210-3699b33e6925.htm')">Requirement: GST.43 Display of Satellite Status</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f3ac1482-41d8-4825-badd-ee194859704f.htm')">Requirement: GST.44 Maintain Data on Events and Failures</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_e48b9c9e-c717-467f-b1fa-e921887c0c13.htm')">Requirement: GST.45 Log Updates</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_93af4911-6da0-4f06-96c0-d4e159f19870.htm')">Requirement: GST.46 Log Format</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b47a4905-fcd5-4ed1-b176-50587bc7bbec.htm')">Requirement: GST.47 Network Configuration Display</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_dc6d9385-65ad-47fb-8c06-dbbd3de6c636.htm')">Requirement: GST.48 Network Management Capabilities</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_1b8cb92c-8dac-48ab-b374-5d4fe55171e8.htm')">Requirement: GST.49 Performance Data Retrieval</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_9f1dd1c9-36ae-40f5-ba49-a50a8881ca72.htm')">Requirement: GST.50 Historical Performance Data</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_3a0e28c8-b829-4747-a51e-bdbba39a7669.htm')">Requirement: GST.51 Ephemeris Data Requirements</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_eb5542e7-3123-450d-8c12-2475cab99b83.htm')">Requirement: GST.52 Alarm Requirements</span></div>
+</td></tr>
+</table>
+</body></html>

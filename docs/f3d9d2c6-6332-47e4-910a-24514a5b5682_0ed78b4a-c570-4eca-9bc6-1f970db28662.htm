@@ -1,0 +1,86 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Component / Telemeter</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_BDD.htm'>BDD</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_Hierarchy.htm'>Hierarchy</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_0ed78b4a-c570-4eca-9bc6-1f970db28662_PhysicalBlock.htm'>PhysicalBlock</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>Telemeter</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>C.2.2.1</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>nil</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built from</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_55df5d66-04aa-4756-ae4c-3132ad1dfb3b.htm')">Component: C.2.2.1.1 Telemetry Control Device</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_36387219-7310-4815-a7ea-de9a2c32ebed.htm')">Component: C.2.2.1.2 Telemetry Display</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_e7a2e2b5-07ff-4bbe-9b83-d96efd4d5cd3.htm')">Component: C.2.2.1.3 Telemetry Sensor</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_30882452-3f2b-4d5b-9fe2-384f8c97dab0.htm')">Component: C.2.2.1.4 Telemetry Transmission Path</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built in</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_c6821a0e-7820-4145-9002-44094948fb67.htm')">Component: C.2.2 Mission Control Center</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>specified by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f9b0398e-170e-4e81-ba55-8362a22ef3d6.htm')">Requirement: GST.6 TT&amp;C Requirements</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_484ad302-f70e-4613-bcfc-203cb32ab295.htm')">Requirement: GST.22 Simultaneous Channels</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_80ca95b2-2e89-48fa-97bf-9b20d3e4df88.htm')">Requirement: GST.23 Telemetry Downlink</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_a2ac8e2e-f56c-408c-8ff2-e12c87b6b5cb.htm')">Requirement: GST.24 Downlink Signal Quality</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f20f32bd-d3eb-4dc4-81e9-83f4a0b13730.htm')">Requirement: GST.25 Telemetry Data Retrieval</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_92eacdac-8b7b-4257-80c1-bfdee57863a7.htm')">Requirement: GST.26 Telecommand Uplink Speeds</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_1fcdeeb1-9bcc-48ec-8629-6ce90066bd77.htm')">Requirement: GST.31 Reconfiguration of Satellite</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d703da1d-c3b7-4fc8-8787-0773c95a37a8.htm')">Requirement: GST.36 Orbit Determination</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_874ff2a7-b200-48ea-96ed-c00537c5dc2e.htm')">Requirement: GST.37 Attitude Monitoring</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7393bc91-85d9-495d-a6d3-b4182b078066.htm')">Requirement: GST.38 Maneuver Commands</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_bda0b262-13bc-4b9d-844a-ac79ff956b46.htm')">Requirement: GST.39 Orbital Events</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_148a33a8-b987-4380-aebf-e6bd7a03abb3.htm')">Requirement: GST.40 Physical State Determination</span></div>
+</td></tr>
+</table>
+</body></html>

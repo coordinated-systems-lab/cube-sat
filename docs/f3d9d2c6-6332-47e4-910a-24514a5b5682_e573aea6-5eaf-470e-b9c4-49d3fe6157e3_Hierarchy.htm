@@ -1,0 +1,43 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Mission Control Center (MCC) / DATA PROCESSING AND DISTRIBUTION</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_e573aea6-5eaf-470e-b9c4-49d3fe6157e3.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_e573aea6-5eaf-470e-b9c4-49d3fe6157e3_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='f3d9d2c6-6332-47e4-910a-24514a5b5682_e573aea6-5eaf-470e-b9c4-49d3fe6157e3_Hierarchy.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='266,88,366,158' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_e573aea6-5eaf-470e-b9c4-49d3fe6157e3.htm'>
+<area shape='rect' coords='41,208,141,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_3d54434c-2fbd-454f-88a5-4e0a249f3547.htm'>
+<area shape='rect' coords='191,208,291,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_26cab471-8088-4355-8273-d65eb2babc6a.htm'>
+<area shape='rect' coords='341,208,441,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_9564e8dd-5da2-401c-aeec-322397ae1884.htm'>
+<area shape='rect' coords='491,208,591,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_d31e322d-e41f-40aa-a4ce-d4a47db93ed3.htm'>
+</map>
+</div>
+</body></html>

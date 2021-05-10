@@ -1,0 +1,79 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Mission Control Center (MCC) / MISSION CONTROL CENTER (MCC) REQUIREMENTS</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_7fa94dc6-783b-4ec0-bd19-4bfa98d575db.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_7fa94dc6-783b-4ec0-bd19-4bfa98d575db_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
+<tr><td style='text-align: left'>
+<span id='spnViewAttributes' onclick="ViewSheet_Click('attributes')">Attributes</span>&nbsp;&nbsp;<span id='spnViewDivider_Props'>|</span>&nbsp;&nbsp;<span id='spnViewParameters' onclick="ViewSheet_Click('parameters')">Parameters</span>
+</td></tr></table>
+<table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
+<td>MISSION CONTROL CENTER (MCC) REQUIREMENTS</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
+<td>MCC</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Key Performance Parameter</td>
+<td>False</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Performance Parameter Type</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Origin</td>
+<td>nil</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Incentive Performance Parameter</td>
+<td>False</td></tr>
+</table>
+<table id='tblParamSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='display: none; width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td>(none present)</td></tr>
+</table>
+<table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td class='cPrimBG' style='text-align: left'>Relationships</td></tr></table>
+<table cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>packaged by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d207a4e2-ae9e-4849-a970-842a6e4c9dce.htm')">Package:  Reports</span></div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>refined by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_69621b4f-4fec-4522-b431-5c024dbbf198.htm')">Requirement: MCC.1 Scalable MCC Architecture</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7ed24ed6-ba13-4a5e-962a-15edf069cfac.htm')">Requirement: MCC.2 Progressive Capability Deployment</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_3bf337f7-1a15-4bfe-9788-c692511ee435.htm')">Requirement: MCC.3 MCC Lifetime</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_6e4df2f7-8665-4bea-aec1-f454418e6d55.htm')">Requirement: MCC.4 Backup Mechanisms</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_5840bf1b-f3e2-40a9-9a6a-3f271276863e.htm')">Requirement: MCC.5 MCC Upgrades</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_fdc275cb-5fd3-43c8-abd1-3e89bb1df57f.htm')">Requirement: MCC.6 MCC Availability </span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_0975bb20-122b-44d9-93fc-39071b8f8f97.htm')">Requirement: MCC.7 Hardware Failure Rate</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ae301bcd-f52d-4f23-b606-55072f6f7bcb.htm')">Requirement: MCC.8 MCC Operation Period</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1.htm')">Requirement: MCC.9 COMMAND AND CONTROL</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_e573aea6-5eaf-470e-b9c4-49d3fe6157e3.htm')">Requirement: MCC.10 DATA PROCESSING AND DISTRIBUTION</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_6f77f904-aaaa-4e8c-ba2d-6ee79c6a4ee7.htm')">Requirement: MCC.11 MISSION MANAGEMENT</span></div>
+</td></tr>
+</table>
+</body></html>

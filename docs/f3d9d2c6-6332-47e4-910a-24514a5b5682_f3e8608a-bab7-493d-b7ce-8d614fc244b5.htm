@@ -26,8 +26,11 @@ window.parent.postMessage(document.body.scrollHeight, '*');
 </head>
 <body onload='window_Load()' style='text-align: center; padding-top: 10px'>
 <table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
-<tr><td id='tdEntityName'>Component / Ground Station</td>
+<tr><td id='tdEntityName'>Component / Ground Segment</td>
 <td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5_BDD.htm'>BDD</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5_Hierarchy.htm'>Hierarchy</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f3e8608a-bab7-493d-b7ce-8d614fc244b5_PhysicalBlock.htm'>PhysicalBlock</option>
 </select>
 </td></tr></table>
 <table cellpadding='5' cellspacing='0' class='cPrimBG' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top'>
@@ -36,9 +39,15 @@ window.parent.postMessage(document.body.scrollHeight, '*');
 </td></tr></table>
 <table id='tblAttribSheet' cellpadding='5' cellspacing='0' class='cSecBG' style='width: 75%; margin-left: auto; margin-right: auto; text-align: left; vertical-align: top'>
 <tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Name</td>
-<td>Ground Station</td></tr>
+<td>Ground Segment</td></tr>
 <tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Number</td>
 <td>C.2</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Description</td>
+<td><style type="text/css">
+			.cs2654AE3A{text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt}
+			.cs63D6557C{color:#000000;background-color:transparent;font-family:'Segoe UI';font-size:9pt;font-weight:normal;font-style:normal;}
+		</style>
+		<p class="cs2654AE3A"><span class="cs63D6557C">Ground segment enables management of a spacecraft, and distribution of payload data and telemetry among interested parties on the ground. </span></p><p class="cs2654AE3A"><span class="cs63D6557C">&nbsp;</span></p><p class="cs2654AE3A"><span class="cs63D6557C">Source: https://en.wikipedia.org/wiki/Ground_segment </span></p></td></tr>
 <tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Abbreviation</td>
 <td>GS</td></tr>
 <tr><td style='font-weight: bold; width: 150px; vertical-align: top'>Type</td>
@@ -54,9 +63,20 @@ window.parent.postMessage(document.body.scrollHeight, '*');
 <td>
 <div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_4423a899-8818-4dda-bc72-82fc03e3c0bb.htm')">Organization: 2 University of Virginia</span></div>
 </td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built from</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_e3a7e850-0d47-4d6e-9831-08711991b24e.htm')">Component: C.2.1 Ground Station</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_c6821a0e-7820-4145-9002-44094948fb67.htm')">Component: C.2.2 Mission Control Center</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_c36c4ec6-0a7e-4eb7-ab5c-61722860ff49.htm')">Component: C.2.3 Remote Terminals</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7c7d33c1-0fc9-4a80-a1dc-4eb6fa34dd17.htm')">Component: C.2.4 Ground Network</span></div>
+<div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
+</td></tr>
 <tr><td style='font-weight: bold; width: 150px; vertical-align: top'>built in</td>
 <td>
-<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1.htm')">Component: C Forest Fire Sensing System Context</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_d2c054c3-1801-4fd3-81bd-e6ee696457e1.htm')">Component: C CubeSat System Context</span></div>
 <div style='padding-left: 25px'><span style='font-style: italic'>Whole Multiplicity:&nbsp;</span>0</div>
 <div style='padding-left: 25px'><span style='font-style: italic'>Part Multiplicity:&nbsp;</span>1</div>
 </td></tr>
@@ -64,7 +84,20 @@ window.parent.postMessage(document.body.scrollHeight, '*');
 <td>
 <div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_2323fcfa-0748-4e80-8503-d1350a89a25c.htm')">Link:  Guidance &amp; Navigation</span></div>
 <div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_0627bf03-d93f-4638-9459-3f2ea7e33be4.htm')">Link:  Mission Control</span></div>
-<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_17ef2868-3b4c-401e-a8b7-d2ea75bf277b.htm')">Link:  Mission Payload</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7edccff1-630b-4023-9b29-484afcd4777c.htm')">Link:  Mission Payload</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_17ef2868-3b4c-401e-a8b7-d2ea75bf277b.htm')">Link:  Payload</span></div>
+</td></tr>
+<tr><td style='font-weight: bold; width: 150px; vertical-align: top'>specified by</td>
+<td>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_94cbe073-21e2-48eb-8aaa-4d7a2d385a4d.htm')">Requirement: GST.15 Time Synchronization</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_9d630bb3-6d62-4153-84e6-cf9374480aa1.htm')">Requirement: GST.16 Time Format and Use</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7659c9da-81fd-4baf-a7eb-a0a1ab4855bc.htm')">Requirement: GST.21 Progressive Deployment</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_473f0a49-f238-4a9d-a913-5021440a2746.htm')">Requirement: GST.30 Centers</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_7ae1a15c-0089-4eee-8a8e-3e13d37c3ce6.htm')">Requirement: GST.32 GS Operation Period</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b672dd37-b843-40f6-89ac-8b78386f0e15.htm')">Requirement: GST.33 GST Updates</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_ce480235-8ecc-4931-b47b-627f79063e80.htm')">Requirement: GST.35 GS Upgrade</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_76c15fb1-b70f-4573-92c2-506982f170ce.htm')">Requirement: GST.41 GS Availability</span></div>
+<div><span class='cNdeLink' style='text-decoration: underline' onclick="window.location.assign('f3d9d2c6-6332-47e4-910a-24514a5b5682_b4b9fe60-d4f0-4463-885f-5b07335a1ff3.htm')">Requirement: GST.42 MTBF Time</span></div>
 </td></tr>
 </table>
 </body></html>

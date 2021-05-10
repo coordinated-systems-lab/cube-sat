@@ -1,0 +1,46 @@
+<!DOCTYPE html Public '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>GENESYS Team View</title>
+<link rel='stylesheet' type='text/css' href='GENESYS_TeamView.css'/>
+<script type='text/javascript' src='PropertySheet.js'></script>
+<script type='text/javascript'>
+function window_Load(){
+if (document.getElementById('cmbEntityViews')){
+var strPageName = window.location.pathname.split('/').pop();
+document.getElementById('cmbEntityViews').value = strPageName; }
+
+try {
+if(window.self != window.top){
+parent.SizeIFrame(document.body.scrollHeight);}
+} catch (e1) {
+try {
+parent.SizeIFrame(document.body.scrollHeight);
+}
+catch (e2) {
+// Chrome allows no cross-frame access; use HTML5 API
+window.parent.postMessage(document.body.scrollHeight, '*');
+}}}
+
+</script>
+</head>
+<body onload='window_Load()' style='text-align: center; padding-top: 10px'>
+<table cellpadding='0' cellspacing='0' style='width: 75%; margin-left: auto; margin-right: auto; vertical-align: top; padding-bottom: 10px'>
+<tr><td id='tdEntityName'>Requirement / Mission Control Center (MCC) / COMMAND AND CONTROL</td>
+<td style='text-align: right'>View:&nbsp;<select id='cmbEntityViews' onchange='View_Change()'><option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1.htm'>Property sheet</option>
+<option value='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1_Hierarchy.htm'>Hierarchy</option>
+</select>
+</td></tr></table>
+<div style='text-align: center'><img src='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1_Hierarchy.png' usemap='#mapDiagram'>
+<map name='mapDiagram'>
+<area shape='rect' coords='491,88,591,158' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_f9c69615-b122-4ab4-a64f-afa939237ef1.htm'>
+<area shape='rect' coords='41,208,141,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_da25ddf7-0bb4-41b5-b8c4-afcf3bccb084.htm'>
+<area shape='rect' coords='191,208,291,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_53a69790-d70b-46e3-b65a-1aff7ce87a6d.htm'>
+<area shape='rect' coords='341,208,441,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_99e2610e-e65c-4726-887e-328462906a74.htm'>
+<area shape='rect' coords='491,208,591,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_de34abb8-b798-48ef-8673-03b49c0ff746.htm'>
+<area shape='rect' coords='641,208,741,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_1965e92b-39f1-454c-a59e-22935143d097.htm'>
+<area shape='rect' coords='791,208,891,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_677e6bfa-1b8e-4dff-8c13-92390bf4d947.htm'>
+<area shape='rect' coords='941,208,1041,278' href='f3d9d2c6-6332-47e4-910a-24514a5b5682_497b0678-dad4-4f24-94cf-719fc66201ad.htm'>
+</map>
+</div>
+</body></html>
