@@ -16,7 +16,7 @@ https://coordinated-systems-lab.github.io/cube-sat/
 
 <img src="images/graphql.png" width="200">
 
-* [Sparse MBSE GraphQL Schema](./graphql/mbse-metamodel.graphql)
+* [GENESYS 'Essential' (Sparse) MBSE GraphQL Schema](./graphql/mbse-metamodel.graphql)
 * [CubeSat Case Study System Model](./graphql/fire-sensing.json)
 
 # GraphQL Playground
@@ -63,6 +63,26 @@ query UseCases {
         identity {
           number
           name
+        }
+      }
+    }
+  }
+}
+```
+```
+query Requirements {
+  cpsSystemModelQuery(projectId: "f3d9d2c6-6332-47e4-910a-24514a5b5682") {
+    cpsSystemModel {
+      project {
+        name
+      }
+      requirement {
+        identity {
+          number,
+          name
+        }
+        attributes {
+          description
         }
       }
     }
